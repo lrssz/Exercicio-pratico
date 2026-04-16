@@ -1,11 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício Prático - HTML Básico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: center;
+            
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background-color: white;
+            padding: 10px 20px;
+            margin: 20px 0;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #fff;
+            border-radius: 10px;
+        }
+        th {
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .destaque {
+            background-color: #fffacd;
+            padding: 15px;
+            border-left: 4px solid #ffa500;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Meu primeiro site HTML</h1>
+        <p>Exercício Prático - Tags Semânticas e Tabelas</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#horarios">Horários</a>
+    </nav>
+
+    <section>
+        <div id="sobre">
+            <h2>Sobre mim</h2>
+            <h3>Quem sou eu?</h3>
+            <p>Olá! Meu nome é <b>Lorena Souza</b>, estudante do curso de Bacharelado em Ciência da Computação do IFBA - Campus Paulo Afonso. Este é meu primeiro exercício com <em>HTML semântico</em>.</p>
+            <p>Estou aprendendo sobre:</p>
+            <ul>
+                <li>Tags semânticas (header, nav, main, section, article, aside, footer)</li>
+                <li>Listas ordenadas e não ordenadas</li>
+                <li>Tabelas estruturadas</li>
+                <li>Links e imagens</li>
+            </ul>
+            <div class="destaque">
+                <h3>Objetivo do exercício</h3>
+                <p>Praticar a criação de uma página HTML completa utilizando as principais tags e mantendo a semântica correta do documento.</p>
+            </div>
+        </div>
+    </section>
+            
+    <section>
+        <div id="servicos">
+            <h2>Meus Serviços</h2>
+            <h3>O que eu ofereço:</h3>
+            <ol>
+                <li><b>Desenvolvimento Web</b> - Criação de sites responsivos</li>
+                <li><b>Manutenção</b> - Atualização e correção de sites existentes</li>
+                <li><b>Digitação e formatação de documentos</b> - Digitação e formatação de PDIs, SIEPE, Relatórios, etc.</li>
+                <li><b>Consultoria</b> - Orientação sobre melhores práticas</li>
+            </ol>
+        </div>
+    </section>
+            
+    <section>
+        <div id="horarios">
+            <h2>Tabela de Horários</h2>
+            <p>2° período - Ciência da Computação</p>
+                    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horário</th>
+                        <th>Disciplina</th>
+                        <th>Professor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Segunda-feira</td>
+                        <td>16:50 - 18:30</td>
+                        <td>ACEx I</td>
+                        <td>Eliomar Campos</td>
+                    </tr>
+                    <tr>
+                        <td>18:30 - 20:10</td>
+                        <td>Banco de Dados I</td>
+                        <td>Tiago Eduardo</td>
+                    </tr>
+                    <tr>
+                        <td>20:20 - 22:00</td>
+                        <td>Tecnologias Web</td>
+                        <td>Fabiano Vaz</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Terça-feira</td>
+                        <td>16:50 - 18:30</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>18:30 - 20:10</td>
+                        <td>Cálculo I</td>
+                        <td>Esdriane Viana</td>
+                    </tr>
+                    <tr>
+                        <td>20:20 - 22:00</td>
+                        <td>Banco de Dados I</td>
+                        <td>Tiago Eduardo</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Quarta-feira</td>
+                        <td>16:50 - 18:30</td>
+                        <td>Ciência, Tecnologia e Sociedade</td>
+                        <td>Rodrigo Mota</td>
+                    </tr>
+                    <tr>
+                        <td>18:30 - 20:10</td>
+                        <td>Álgebra Vetorial e Geometria Analítica</td>
+                        <td>Evandro Barbosa</td>
+                    </tr>
+                    <tr>
+                        <td>20:20 - 22:00</td>
+                        <td>Tecnologias Web</td>
+                        <td>Fabiano Vaz</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Quinta-feira</td>
+                        <td>16:50 - 18:30</td>
+                        <td>Ciência, Tecnologia e Sociedade</td>
+                        <td>Rodrigo Mota</td>
+                    </tr>
+                    <tr>
+                        <td>18:30 - 20:10</td>
+                        <td>Cálculo I</td>
+                        <td>Esdriane Viana</td>
+                    </tr>
+                    <tr>
+                        <td>20:20 - 22:00</td>
+                        <td>Estrutura de Dados</td>
+                        <td>Lidiana Martins</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Sexta-feira</td>
+                        <td>16:50 - 18:30</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>18:30 - 20:10</td>
+                        <td>Álgebra Vetorial e Geometria Analítica</td>
+                        <td>Evandro Barbosa</td>
+                    </tr>
+                    <tr>
+                        <td>20:20 - 22:00</td>
+                        <td>Estrutura de Dados</td>
+                        <td>Lidiana Martins</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lorena Souza - Todos os direitos reservados</p>
+        <p>Criado como exercício prático de HTML</p>
+    </footer>
     
 </body>
 </html>
