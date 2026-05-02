@@ -1,0 +1,262 @@
+<!-- professor, percebi que a fonte no vídeo é diferente da minha, que mostra no navegador,
+ não sei se é uma configuração já do seu navegador a fonte diferente, entao como o senhor disse
+ que usou apenas HTML, resolvi deixar como está -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol Brasileiro - Ranking de Títulos</title>
+</head>
+<body>
+    <header>
+        <h1>Futebol Brasileiro - Ranking de Títulos</h1>
+        <p>Os melhores campeões nacionais do Brasil</p>
+    </header>
+
+    <nav>
+        <h3>Menu de navegação</h3>  
+        <ul>
+            <li><a href="#ranking">Ranking de Títulos</a></li>
+            <li><a href="#cadastro">Cadastrar Jogador</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <section>
+        <div id="ranking">
+            <h2>Classificação de Títulos Nacionais</h2>
+            <p>Ranking dos clubes brasileiros com mais títulos do Campeonato Brasileiro</p>
+            <table border="1" cellspacing="0" cellpadding="8" width="600">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Escudo</th>
+                        <th>Time</th>
+                        <th>Títulos Brasileiros</th>
+                        <th>Copa do Brasil</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td><strong>1°</strong></td>
+                        <td><img src="../praticaLaboral/img/maiorCampeao.png" alt="Escudo do Palmeiras"></td>
+                        <td align="left"><strong>Palmeiras</strong></td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>16</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>2°</strong></td>
+                        <td><img src="../praticaLaboral/img/time2.png" alt="Escudo do Flamengo"></td>
+                        <td align="left"><strong>Flamengo</strong></td>
+                        <td>8*</td>
+                        <td>5</td>
+                        <td>13</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>3°</strong></td>
+                        <td><img style="transform: rotate(180deg);" src="../praticaLaboral/img/time3.png" alt="Escudo do Corinthians"></td>
+                        <td align="left"><strong>Corinthians</strong></td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>11</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>4°</strong></td>
+                        <td><img src="../praticaLaboral/img/time4.png" alt="Escudo do Cruzeiro"></td>
+                        <td align="left"><strong>Cruzeiro</strong></td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>10</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>5°</strong></td>
+                        <td><img src="../praticaLaboral/img/time5.png" alt="Escudo do Santos"></td>
+                        <td align="left"><strong>Santos</strong></td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>6°</strong></td>
+                        <td><img src="../praticaLaboral/img/time7.png" alt="Escudo do São Paulo"></td>
+                        <td align="left"><strong>São Paulo</strong></td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>7</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>7°</strong></td>
+                        <td><img src="../praticaLaboral/img/time6.png" alt="Escudo do Grêmio"></td>
+                        <td align="left"><strong>Grêmio</strong></td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>7</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>8°</strong></td>
+                        <td><img src="../praticaLaboral/img/time9.png" alt="Escudo do Vasco da Gama"></td>
+                        <td align="left"><strong>Vasco da Gama</strong></td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>9°</strong></td>
+                        <td><img src="../praticaLaboral/img/time10.png" alt="Escudo do Fluminense"></td>
+                        <td align="left"><strong>Fluminense</strong></td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>10°</strong></td>
+                        <td><img src="../praticaLaboral/img/time8.png" alt="Escudo do Atlético Mineiro"></td>
+                        <td align="left"><strong>Atlético Mineiro</strong></td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6" align="center"><em>*87 é do Sport</em></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr>
+        </div>
+        
+        <div id="cadastro">
+            <h2>Cadastro de Jogador</h2>
+            <p>Preencha todos os campos abaixo para cadastrar um novo jogador</p>
+            <form>
+                <fieldset style="border-color: gray;">
+                    <legend>Dados Pessoais</legend>
+
+                    <br> <label for="nome">Nome completo:</label><br>
+                    <input type="text" id="nome" name="nome" size="50" required><br>
+
+                    <br><label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" size="50" required><br>
+
+                    <br><label for="pwd">Senha:</label><br>
+                    <input type="password" id="pwd" name="pwd" size="20" required><br>
+                    
+                    <br><label for="data">Data de nascimento:</label><br>
+                    <input type="date" id="data" name="data" required><br>
+
+                    <br><label for="idade">Idade:</label><br>
+                    <input type="number" id="idade" name="idade" value="26" min="0" max="100" required><br>
+                    
+                    <br><label for="idade">Altura (em metros):</label><br>
+                    <input type="number" id="idade" name="idade" value="1.75" min="0" max="3" step="0.01" required><br>
+                    
+                    <br><label for="peso">Peso (kg):</label><br>
+                    <input type="range" id="peso" name="peso" min="0" max="100" required style="accent-color: blue;"><span class="info">75 kg</span><br>
+                    
+                    <br><label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="XX-XXXXX-XXXX" required><br>
+                    
+                    <br><label for="site">Site Pessoal:</label><br>
+                    <input type="url" id="site" name="site" placeholder="https://exemplo.com" required><br>
+
+                    <br><label for="cor">Cor Favorita:</label><br>
+                    <input type="color" id="cor" name="cor" value="#ff0000" required>
+            </fieldset>
+            
+            <fieldset style="border-color: gray;">
+                <legend>Dados Profissionais</legend><br>
+                <label for="clube">Selecione o Clube:</label><br>
+                <select name="clube" id="clube" required>
+                    <option value="" disabled selected>-- Escolha um clube --</option>
+                    <option value="">Palmeiras</option>
+                    <option value="">Flamengo</option>
+                    <option value="">Corinthians</option>
+                    <option value="">Cruzeiro</option>
+                    <option value="">Santos</option>
+                    <option value="">São Paulo</option>
+                    <option value="">Grêmio</option>
+                    <option value="">Vasco da Gama</option>
+                    <option value="">Fluminense</option>
+                    <option value="">Atlético Mineiro</option>
+                </select><br>
+                <br>
+                <label for="posicao">Posição principal:</label><br>
+                <select name="posicao" id="posicao" size="4" required>
+                    <option value="">Goleiro</option>
+                    <option value="">Zagueiro</option>
+                    <option value="">Lateral Direito</option>
+                    <option value="">Lateral Esquerdo</option>
+                    <option value="">Ala</option>
+                    <option value="">Volante</option>
+                    <option value="">Meia Central</option>
+                    <option value="">Meia-Atacante</option>
+                    <option value="">Meia Lateral</option>
+                    <option value="">Ponta Esquerda</option>
+                    <option value="">Ponta Direita</option>
+                    <option value="">Centroavante</option>
+                    <option value="">Segundo Atacante</option>
+                </select>
+                <br>
+                <br><label for="numeroCamisa">Número da Camisa:</label><br>
+                <input type="number" id="numeroCamisa" name="numeroCamisa" min="0" max="99" required><br>
+
+                <br><label for="salario">Salário (R$):</label><br>
+                <input type="number" id="salario" name="salario" placeholder="50000.00" step="1.00" required><br>
+
+                <br><label for="dataVencimento">Data de Vencimento do Contrato:</label><br>
+                <input type="date" id="dataVencimento" name="dataVencimento" required><br>
+
+                <br><label for="horarioTreino">Horário de Treino Preferido:</label><br>
+                <input type="time" id="horarioTreino" name="horarioTreino" value="09:00" required><br>
+
+                <br><label for="dataHoraUltimaPartida">Data e Hora da Última Partida:</label><br>
+                <input type="datetime-local" id="dataHoraUltimaPartida" name="dataHoraUltimaPartida" required><br>
+
+                <br><label for="mesContratacao">Mês/Ano de Contratação:</label><br>
+                <input type="month" id="mesContratacao" name="mesContratacao" required><br>
+
+                <br><label for="semanaFolga">Semana de folga:</label><br>
+                <input type="week" id="semanaFolga" name="semanaFolga" required><br>
+            </fieldset>
+
+            <fieldset style="border-color: gray;">
+                <legend>Características</legend>
+
+                <br> <label for="peDominante"><strong>Pé Dominante:</strong></label><br>
+                <input type="radio" id="peDominante" name="peDominante" style="accent-color: blue;" required><span>Direito</span><br>
+                <input type="radio" id="peDominante" name="peDominante" style="accent-color: blue;" required><span>Esquerdo</span><br>
+                <input type="radio" id="peDominante" name="peDominante" style="accent-color: blue;" required><span>Ambidestro</span><br>
+
+                <br> <label for="habilidadeEspecial"><strong>Habilidades Especiais</strong>:</strong></label><br>
+                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;" required><span>Cobrador de Faltas</span><br>
+                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;" required><span>Cobrador de Pênaltis</span><br>
+                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;" required><span>Potencial Capitão</span><br>
+                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;" required><span>Convocável para Seleção</span><br>
+
+                <br><label for="biografia">Biografia do Jogador:</label><br>
+                <textarea id="biografia" name="biografia" rows="5" cols="50" placeholder="Escreva uma breve biografia do jogador..." required></textarea><br>
+                
+                <br><label for="foto">Upload de Foto do Jogador</label><br>
+                <input type="file" id="foto" name="foto" accept="image/*" required><br>
+                
+                <br><label for="buscar">Pesquisar Estatísticas</label><br>
+                <input type="search" id="buscar" name="buscar" placeholder="Digite para buscar..." required><br>
+            </fieldset><br>
+
+            <button type="submit">Cadastrar Jogador</button>
+            <button type="reset">Limpar Formulário</button>
+            <button>Ajuda</button>
+            </form>
+        </div>
+    </section>
+    <br><hr>
+    <footer>
+        <p align="center"><strong>Ciência da Computação - IFBA</strong></p>
+        <p align="center">&copy; 2026.1 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
