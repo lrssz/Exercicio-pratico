@@ -134,36 +134,36 @@
             <p>Preencha todos os campos abaixo para cadastrar um novo jogador</p>
             <form>
                 <fieldset style="border-color: gray;">
-                    <legend>Dados Pessoais</legend>
-
-                    <br> <label for="nome">Nome completo:</label><br>
-                    <input type="text" id="nome" name="nome" size="50" required><br>
-
-                    <br><label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email" size="50" required><br>
-
-                    <br><label for="pwd">Senha:</label><br>
-                    <input type="password" id="pwd" name="pwd" size="20" required><br>
+                    <legend>Dados Pessoais</legend><br>
                     
-                    <br><label for="data">Data de nascimento:</label><br>
-                    <input type="date" id="data" name="data" required><br>
+                    <label for="nome">Nome completo:</label><br>
+                    <input type="text" id="nome" name="nome" size="50" required><br><br>
+                
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" size="50" required><br><br>
 
-                    <br><label for="idade">Idade:</label><br>
-                    <input type="number" id="idade" name="idade" value="26" min="0" max="100" required><br>
+                    <label for="pwd">Senha:</label><br>
+                    <input type="password" id="pwd" name="pwd" size="20" required><br><br>
                     
-                    <br><label for="idade">Altura (em metros):</label><br>
-                    <input type="number" id="idade" name="idade" value="1.75" min="0" max="3" step="0.01" required><br>
-                    
-                    <br><label for="peso">Peso (kg):</label><br>
-                    <input type="range" id="peso" name="peso" min="0" max="100" required style="accent-color: blue;"><span class="info">75 kg</span><br>
-                    
-                    <br><label for="telefone">Telefone:</label><br>
-                    <input type="tel" id="telefone" name="telefone" placeholder="XX-XXXXX-XXXX" required><br>
-                    
-                    <br><label for="site">Site Pessoal:</label><br>
-                    <input type="url" id="site" name="site" placeholder="https://exemplo.com" required><br>
+                    <label for="data">Data de nascimento:</label><br>
+                    <input type="date" id="data" name="data" required><br><br>
 
-                    <br><label for="cor">Cor Favorita:</label><br>
+                    <label for="idade">Idade:</label><br>
+                    <input type="number" id="idade" name="idade" value="26" min="0" max="100" required><br><br>
+                    
+                    <label for="altura">Altura (em metros):</label><br>
+                    <input type="number" id="altura" name="altura" value="1.75" min="0" max="3" step="0.01" required><br><br>
+                    
+                    <label for="peso">Peso (kg):</label><br>
+                    <input type="range" id="peso" name="peso" min="0" max="100" required style="accent-color: blue;"><span class="info">75 kg</span><br><br>
+                    
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="XX-XXXXX-XXXX" required><br><br>
+                    
+                    <label for="site">Site Pessoal:</label><br>
+                    <input type="url" id="site" name="site" placeholder="https://exemplo.com" required><br><br>
+
+                    <label for="cor">Cor Favorita:</label><br>
                     <input type="color" id="cor" name="cor" value="#ff0000" required>
             </fieldset>
             
@@ -200,50 +200,50 @@
                     <option value="">Centroavante</option>
                     <option value="">Segundo Atacante</option>
                 </select>
-                <br>
-                <br><label for="numeroCamisa">Número da Camisa:</label><br>
-                <input type="number" id="numeroCamisa" name="numeroCamisa" min="0" max="99" required><br>
+                <br><br>
+                <label for="numeroCamisa">Número da Camisa:</label><br>
+                <input type="number" id="numeroCamisa" name="numeroCamisa" min="0" max="99" required><br><br>
+                
+                <label for="salario">Salário (R$):</label><br>
+                <input type="number" id="salario" name="salario" placeholder="50000.00" step="1.00" required><br><br>
+                
+                <label for="dataVencimento">Data de Vencimento do Contrato:</label><br>
+                <input type="date" id="dataVencimento" name="dataVencimento" required><br><br>
 
-                <br><label for="salario">Salário (R$):</label><br>
-                <input type="number" id="salario" name="salario" placeholder="50000.00" step="1.00" required><br>
+                <label for="horarioTreino">Horário de Treino Preferido:</label><br>
+                <input type="time" id="horarioTreino" name="horarioTreino" value="09:00" required><br><br>
 
-                <br><label for="dataVencimento">Data de Vencimento do Contrato:</label><br>
-                <input type="date" id="dataVencimento" name="dataVencimento" required><br>
+                <label for="dataHoraUltimaPartida">Data e Hora da Última Partida:</label><br>
+                <input type="datetime-local" id="dataHoraUltimaPartida" name="dataHoraUltimaPartida" required><br><br>
 
-                <br><label for="horarioTreino">Horário de Treino Preferido:</label><br>
-                <input type="time" id="horarioTreino" name="horarioTreino" value="09:00" required><br>
+                <label for="mesContratacao">Mês/Ano de Contratação:</label><br>
+                <input type="month" id="mesContratacao" name="mesContratacao" required><br><br>
 
-                <br><label for="dataHoraUltimaPartida">Data e Hora da Última Partida:</label><br>
-                <input type="datetime-local" id="dataHoraUltimaPartida" name="dataHoraUltimaPartida" required><br>
-
-                <br><label for="mesContratacao">Mês/Ano de Contratação:</label><br>
-                <input type="month" id="mesContratacao" name="mesContratacao" required><br>
-
-                <br><label for="semanaFolga">Semana de folga:</label><br>
-                <input type="week" id="semanaFolga" name="semanaFolga" required><br>
+                <label for="semanaFolga">Semana de folga:</label><br>
+                <input type="week" id="semanaFolga" name="semanaFolga" required><br><br>
             </fieldset>
 
             <fieldset style="border-color: gray;">
-                <legend>Características</legend>
-
-                <br> <label for="peDominante"><strong>Pé Dominante:</strong></label><br>
+                <legend>Características</legend><br>
+                
+                <label for="peDominante"><strong>Pé Dominante:</strong></label><br>
                 <input type="radio" id="peDominante" name="peDominante" style="accent-color: blue;" required><span>Direito</span><br>
                 <input type="radio" id="peDominante" name="peDominante" style="accent-color: blue;" required><span>Esquerdo</span><br>
                 <input type="radio" id="peDominante" name="peDominante" style="accent-color: blue;" required><span>Ambidestro</span><br>
-
-                <br> <label for="habilidadeEspecial"><strong>Habilidades Especiais</strong>:</strong></label><br>
-                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;" required><span>Cobrador de Faltas</span><br>
-                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;" required><span>Cobrador de Pênaltis</span><br>
-                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;" required><span>Potencial Capitão</span><br>
-                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;" required><span>Convocável para Seleção</span><br>
-
-                <br><label for="biografia">Biografia do Jogador:</label><br>
+                <br>
+                <label for="habilidadeEspecial"><strong>Habilidades Especiais</strong>:</strong></label><br> <!-- deixei sem required aqui pq se não teria que marcar todas as caixinhas pra aceitar o form -->
+                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;"><span>Cobrador de Faltas</span><br>
+                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;"><span>Cobrador de Pênaltis</span><br>
+                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;"><span>Potencial Capitão</span><br>
+                <input type="checkbox" id="habilidadeEspecial" name="habilidadeEspecial" style="accent-color: blue;"><span>Convocável para Seleção</span><br>
+                <br>
+                <label for="biografia">Biografia do Jogador:</label><br>
                 <textarea id="biografia" name="biografia" rows="5" cols="50" placeholder="Escreva uma breve biografia do jogador..." required></textarea><br>
-                
-                <br><label for="foto">Upload de Foto do Jogador</label><br>
+                <br>
+                <label for="foto">Upload de Foto do Jogador</label><br>
                 <input type="file" id="foto" name="foto" accept="image/*" required><br>
-                
-                <br><label for="buscar">Pesquisar Estatísticas</label><br>
+                <br>
+                <label for="buscar">Pesquisar Estatísticas</label><br>
                 <input type="search" id="buscar" name="buscar" placeholder="Digite para buscar..." required><br>
             </fieldset><br>
 
