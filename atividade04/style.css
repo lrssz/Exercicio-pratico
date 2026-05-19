@@ -32,7 +32,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 50px 20px;
-  
     margin: 0 auto;
     flex: 1;
     justify-items: center;
