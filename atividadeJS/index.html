@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if (sessionStorage.getItem('token') === 'jwt123') {
+      window.location.href = 'dashboard.html';
+    }
+  </script>
+</head>
+
+<body>
+  <div class="auth-wrapper">
+    <main class="auth-card" id="login-container">
+      <div class="auth-header">
+        <h1>Bem-vindo</h1>
+        <p>Acesse sua conta para continuar</p>
+      </div>
+      
+      <div id="error-box" class="error-message" role="alert">
+        Usuário ou senha incorretos. Tente novamente!
+      </div>
+
+      <form id="login-form" novalidate>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <div class="input-wrapper">
+            <input 
+              type="text" 
+              id="email" 
+              class="form-input" 
+              placeholder="Digite seu e-mail" 
+              required
+              autocomplete="username"
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <div class="input-wrapper">
+            <input 
+              type="password" 
+              id="password" 
+              class="form-input" 
+              placeholder="Digite sua senha" 
+              required
+              autocomplete="current-password"
+            >
+          </div>
+        </div>
+
+        <button type="submit" id="btn-entrar" class="btn-primary">Entrar</button>
+      </form>
+
+      <nav class="auth-links" aria-label="Opções alternativas de login">
+        <a href="#">Esqueceu a senha?</a>
+        <a href="cadastro.html" id="link-register">Não tem uma conta? Cadastre-se</a>
+      </nav>
+    </main>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="login.js"></script>
+</body>
+</html>

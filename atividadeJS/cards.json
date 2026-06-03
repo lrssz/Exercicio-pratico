@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Primeiros Passos",
+    "description": "Este card foi carregado a partir do arquivo cards.json local usando a API Fetch do JavaScript nativo."
+  },
+  {
+    "id": 2,
+    "title": "Design Responsivo",
+    "description": "A interface se adapta perfeitamente a dispositivos móveis, tablets e desktops utilizando CSS Grid e Flexbox."
+  },
+  {
+    "id": 3,
+    "title": "Componentes Sem Framework",
+    "description": "Todo o comportamento de criação e remoção de cards é feito utilizando manipulação direta do DOM com JS puro."
+  }
+]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro — Painel Admin</title>
+  <meta name="description" content="Página de cadastro de usuários no sistema administrativo.">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if (sessionStorage.getItem('token') === 'jwt123') {
+      window.location.href = 'dashboard.html';
+    }
+  </script>
+</head>
+<body>
+  <div class="auth-wrapper">
+    <main class="auth-card" id="cadastro-container">
+      <div class="auth-header">
+        <h1>Criar Conta</h1>
+        <p>Preencha os campos para se registrar</p>
+      </div>
+
+      <div id="error-box" class="error-message" role="alert"></div>
+
+      <form id="register-form" novalidate>
+        <div class="form-group">
+          <label for="reg-name">Nome Completo</label>
+          <div class="input-wrapper">
+            <input 
+              type="text" 
+              id="reg-name" 
+              class="form-input" 
+              placeholder="Digite seu nome" 
+              required
+              autocomplete="name"
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email">E-mail</label>
+          <div class="input-wrapper">
+            <input 
+              type="email" 
+              id="reg-email" 
+              class="form-input" 
+              placeholder="Digite seu e-mail" 
+              required
+              autocomplete="email"
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-password">Senha</label>
+          <div class="input-wrapper">
+            <input 
+              type="password" 
+              id="reg-password" 
+              class="form-input" 
+              placeholder="Crie uma senha forte" 
+              required
+              autocomplete="new-password"
+            >
+          </div>
+        </div>
+
+        <button type="submit" id="btn-cadastrar" class="btn-primary">Cadastrar</button>
+      </form>
+
+      <nav class="auth-links" aria-label="Voltar para login">
+        <a href="index.html" id="link-login">Já tem uma conta? Faça login</a>
+      </nav>
+    </main>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="login.js"></script>
+</body>
+</html>
